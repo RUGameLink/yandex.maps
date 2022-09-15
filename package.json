@@ -1,0 +1,19 @@
+{
+  "name": "maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RUGameLink/yandex.maps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RUGameLink/yandex.maps/issues"
+  },
+  "homepage": "https://github.com/RUGameLink/yandex.maps#readme"
+}

@@ -14,7 +14,7 @@ function init() {
 	});
 
     var myPolygon = new ymaps.Polygon([[
-        // Координаты вершин внешней границы многоугольника.
+
         [52.258872983050985,104.26549567653568],
         [52.25875941499415,104.26556004955205],
         [52.25867629615861,104.26514296605023],
@@ -31,7 +31,7 @@ function init() {
         hintContent: "Polygon"
     }, {
         fillColor: '#89ac76',
-        // Делаем полигон прозрачным для событий карты.
+
         interactivityModel: 'default#transparent',
         strokeWidth: 8,
         opacity: 0.5
@@ -48,14 +48,14 @@ function init() {
         draggable: true,
         strokeColor: '#000000',
         strokeWidth: 4,
-        strokeStyle: '1 0'// Первой цифрой задаем длину штриха. Второй — длину разрыва.
+        strokeStyle: '1 0'
     });
-    map.geoObjects.add(polyline); // Добавляем линию на карту.
-map.setBounds(polyline.geometry.getBounds()); // Устанавливаем карте границы линии.
+    map.geoObjects.add(polyline); 
+map.setBounds(polyline.geometry.getBounds()); 
 
-    map.controls.remove('geolocationControl'); // удаляем геолокацию
-  map.controls.remove('searchControl'); // удаляем поиск
-  map.controls.remove('trafficControl'); // удаляем контроль трафика
+    map.controls.remove('geolocationControl'); 
+  map.controls.remove('searchControl'); 
+  map.controls.remove('trafficControl'); 
   
   map.geoObjects.add(placemark);
 
